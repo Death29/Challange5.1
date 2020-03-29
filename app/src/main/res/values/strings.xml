@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Challange5.1</string>
+    <string name="pemain">Pemain</string>
+    <string name="com">CPU</string>
+    <string name="vs">Vs</string>
+</resources>

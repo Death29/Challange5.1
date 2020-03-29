@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+    android:id="@+id/headMenu"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/comic"
+    android:text="PILIH LAWANMU"
+    android:textColor="@color/teks"
+    android:textSize="20dp"
+    />
+
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/headMenu"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:id="@+id/pemainImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/landing1"
+        android:clickable="true"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/pemainImage"
+        android:id="@+id/tvPemain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:fontFamily="@font/comic"
+        android:textColor="@color/teks"
+        android:layout_marginLeft="120dp"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/pemainImage"
+        android:id="@+id/vs1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/tvPemain2"
+        app:layout_constraintLeft_toRightOf="@id/tvPemain"
+        android:text="@string/vs"
+        android:textSize="20dp"
+        android:fontFamily="@font/comic"
+        android:textColor="@color/teks"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/pemainImage"
+        android:id="@+id/tvPemain2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/vs1"
+        android:layout_marginRight="100dp"
+        android:text="@string/pemain"
+        android:textSize="20dp"
+        android:fontFamily="@font/comic"
+        android:textColor="@color/teks"
+        />
+
+
+    <ImageView
+        android:id="@+id/comMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tvPemain2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/landing2"
+        android:clickable="true"/>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/comMenu"
+        android:id="@+id/tvPemain3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:textSize="20dp"
+        android:fontFamily="@font/comic"
+        android:textColor="@color/teks"
+        android:layout_marginLeft="120dp"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/comMenu"
+        android:id="@+id/vs2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toLeftOf="@id/tvCom"
+        app:layout_constraintLeft_toRightOf="@id/tvPemain3"
+        android:text="@string/vs"
+        android:textSize="20dp"
+        android:fontFamily="@font/comic"
+        android:textColor="@color/teks"
+        />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/comMenu"
+        android:id="@+id/tvCom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/vs2"
+        android:layout_marginRight="100dp"
+        android:text="@string/com"
+        android:textSize="20dp"
+        android:fontFamily="@font/comic"
+        android:textColor="@color/teks"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
